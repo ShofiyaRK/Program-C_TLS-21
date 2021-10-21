@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int pil,a,b,c;
+    cout << "Cek Kesehatan (Covid-19)" << endl;
+    cout << "Apakah Suhu Tubuh Anda Melebihi 37 ? " << endl;
+    cout << "1) Ya "<< endl;
+    cout << "2) Tidak " << endl;
+    cout << "Masukkan Angka : ";
+    cin >> pil;
+    
+    switch(pil)
+    {
+        case 1:
+        cout << "Apakah Anda Mengalami Batuk ?" << endl;
+        cout << "1) Ya "<< endl;
+        cout << "2) Tidak " << endl;
+        cout << "Masukkan Angka : ";
+        cin >> a;
+        
+        switch(a){
+            case 1:
+            cout << "Apakah Indra Penciuman dan Pengecap Anda Berfungsi Dengan Baik ?" << endl;
+            cout << "1) Ya "<< endl;
+            cout << "2) Tidak " << endl;
+            cout << "Masukkan Angka : ";
+            cin >> b;
+            if (b==2){
+                cout << "Kemungkinan Anda Positif Covid, Harap Segera Melakukan Tes Untuk Memastikan Kebenarannya" << endl;
+            }else{
+                cout << "Kemungkinan Anda Mengalami Demam dan Batuk" << endl;
+                cout << "Dianjurkan untuk : " << endl;
+                cout << "1)Beristirahat yang cukup" << endl;
+                cout << "2)Minum air yang banyak agar tidak dehidrasi" << endl;
+                cout << "3)Minum jahe dan madu untuk meringankan batuk" << endl;
+            }
+            break;
+            case 2:
+            cout << "Apakah Indra Penciuman dan Pengecap Anda Berfungsi Dengan Baik ?" << endl;
+            cout << "1) Ya "<< endl;
+            cout << "2) Tidak " << endl;
+            cout << "Masukkan Angka : ";
+            cin >> c;
+            if (c==2){
+                cout << "Kemungkinan Anda Positif Covid, Harap Segera Melakukan Tes Untuk Memastikan Kebenarannya" << endl;
+            }else{
+                cout << "Kemungkinan Anda Mengalami Demam Saja" << endl;
+                cout << "Dianjurkan untuk : " << endl;
+                cout << "1)Beristirahat yang cukup" << endl;
+                cout << "2)Minum air yang banyak agar tidak dehidrasi" << endl;
+            }
+            break;
+        }
+        break;
+        case 2:
+        cout << "Kemungkinan Besar Anda Negatif Covid," << endl;
+        cout << "Tetapi jika anda merasa orang yang sangat sehat ada juga kemungkinan" << endl;
+        cout << "Anda positif tanpa gejala";
+        break;
+    }
+    
+    cout << " "<<endl;
+    cout << "Program ini dibuat hanya untuk memperkirakan, jika ingin lebih akurat,"<<endl;
+    cout << "Harap melakukan tes secara langsung"<<endl;
+    cout << "TERIMAKASIH";
+    return 0;
+}
